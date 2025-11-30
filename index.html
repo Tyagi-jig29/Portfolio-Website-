@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 253);
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(143, 143, 155);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(238, 235, 47);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(83, 33, 129);
+        }
+
+        #element {
+            color: rgb(83, 33, 129);
+        }
+
+        /* Section Styling */
+        .section-container {
+            width: 100%;
+            background-color: rgba(220, 221, 199, 0.2);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .section-container h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section-container p {
+            font-size: 1.1rem;
+            width: 60%;
+            margin: 0 auto;
+            color: #444;
+        }
+
+        /* Education Table Styling */
+        .education-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
+
+        .education-table th, .education-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .education-table th {
+            background-color: rgb(83, 33, 129);
+            color: white;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: rgba(211, 211, 211, 0.3);
+        }
+
+        /* Horizontal Line Styling */
+        .divider {
+            width: 80%;
+            height: 1px;
+            background-color: #333;
+            margin: 20px auto;
+        }
+
+        /* Left Aligned Sections */
+        .left-section-container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .left-section-container h1 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .left-section-container ul {
+            list-style-type: square;
+            font-size: 1.2rem;
+            color: #444;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jigyasa Tyagi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Jigyasa Tyagi</span>
+                <br>
+                <span id="element"></span>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section-container">
+            <h1>About Me</h1>
+            <p>I am currently pursuing B.Tech at Mody University in the CSE (IBM) department, and I am really enjoying my field.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-container">
+            <h1>Education</h1>
+            <table class="education-table">
+                <tr>
+                    <th>Course/School</th>
+                    <th>Institution Name</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage / Grade</th>
+                </tr>
+                <tr>
+                    <td>Higher Secondary School</td>
+                    <td>D.A.V Public School, Hapur</td>
+                    <td>2022</td>
+                    <td>95.5%</td>
+                </tr>
+                <tr>
+                    <td>Senior Secondary School</td>
+                    <td>D.A.V Public School, Hapur</td>
+                    <td>2024</td>
+                    <td>80.2%</td>
+                </tr>
+                <tr>
+                    <td>B.Tech CSE (IBM)</td>
+                    <td>Mody University</td>
+                    <td>2028</td>
+                    <td>Pursuing</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Line After Table -->
+        <div class="divider"></div>
+
+        <!-- Hobbies Section -->
+        <section class="left-section-container">
+            <h1>Hobbies</h1>
+            <ul>
+                <li>Dancing</li>
+                <li>Reading historical books</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="left-section-container">
+            <h1>Skills</h1>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Communication Skills</li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="left-section-container">
+            <h1>Achievements</h1>
+            <ul>
+                <li>Best speaker in speech competition at Arya Samaj</li>
+            </ul>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="left-section-container">
+            <h1>Contact Me</h1>
+            <ul>
+                <li>Contact Email: jigyasatyagi24.set@modyuniversity.ac.in</li>
+                <li>Contact Number: XXXXXXXXXX</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>An Engineering</i> student.', 'Pursuing B.Tech at Mody University.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
